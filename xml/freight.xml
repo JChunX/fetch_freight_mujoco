@@ -1,0 +1,36 @@
+<mujoco model="freight">
+  <compiler angle="radian" meshdir="../meshes/"/>
+  <statistic meansize="0.0963259" extent="0.878747" center="0.001363 1.45929e-05 0.186545"/>
+  <asset>
+    <mesh name="base_link" file="base_link.STL"/>
+    <mesh name="base_link_collision" file="base_link_collision.STL"/>
+    <mesh name="r_wheel_link" file="r_wheel_link.STL"/>
+    <mesh name="r_wheel_link_collision" file="r_wheel_link_collision.STL"/>
+    <mesh name="l_wheel_link" file="l_wheel_link.STL"/>
+    <mesh name="l_wheel_link_collision" file="l_wheel_link_collision.STL"/>
+    <mesh name="estop_link" file="estop_link.STL"/>
+    <mesh name="estop_link_collision" file="estop_link_collision.STL"/>
+    <mesh name="laser_link" file="laser_link.STL"/>
+    <mesh name="laser_link_collision" file="laser_link_collision.STL"/>
+  </asset>
+  <worldbody>
+    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.356 0.361 0.376 1" mesh="base_link"/>
+    <geom type="mesh" rgba="0.356 0.361 0.376 1" mesh="base_link_collision"/>
+    <geom pos="-0.12465 0.23892 0.31127" quat="0.707105 0.707108 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.8 0 0 1" mesh="estop_link"/>
+    <geom pos="-0.12465 0.23892 0.31127" quat="0.707105 0.707108 0 0" type="mesh" rgba="0.8 0 0 1" mesh="estop_link_collision"/>
+    <geom pos="0.235 0 0.2878" quat="0 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="laser_link"/>
+    <geom pos="0.235 0 0.2878" quat="0 1 0 0" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="laser_link_collision"/>
+    <body name="r_wheel_link" pos="0.0012914 -0.18738 0.055325">
+      <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="4.3542" diaginertia="0.005 0.0045 0.0045"/>
+      <joint name="r_wheel_joint" pos="0 0 0" axis="0 1 0"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.086 0.506 0.767 1" mesh="r_wheel_link"/>
+      <geom type="mesh" rgba="0.086 0.506 0.767 1" mesh="r_wheel_link_collision"/>
+    </body>
+    <body name="l_wheel_link" pos="0.0012914 0.18738 0.055325">
+      <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="4.3542" diaginertia="0.005 0.0045 0.0045"/>
+      <joint name="l_wheel_joint" pos="0 0 0" axis="0 1 0"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.086 0.506 0.767 1" mesh="l_wheel_link"/>
+      <geom type="mesh" rgba="0.086 0.506 0.767 1" mesh="l_wheel_link_collision"/>
+    </body>
+  </worldbody>
+</mujoco>
