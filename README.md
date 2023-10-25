@@ -32,7 +32,7 @@ The conversion did not handle the wheels very well. Therefore I swapped them for
 
 ### I just want the mobile base??
 
-You can simply remove the `<include>` for the panda arm in `mobile_manipulator.xml`.
+You can simply remove the `<include>` for the panda arm in `freight_panda.xml`.
 
 ## Credit
 
