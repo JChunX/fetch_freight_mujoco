@@ -2,7 +2,7 @@
 
 ![freight robot](images/mobile_panda.png)
 
-Mujoco models for the Fetch Robotics Freight Robot. In particular, we have integrated a Panda arm from Mujoco Menagerie with the mobile base in support of embodied robotics research.
+Mujoco models for the Fetch Robotics Freight robot. In particular, we have integrated a Panda arm from Mujoco Menagerie with the mobile base in support of embodied robotics research.
 
 ## Prerequisites
 
