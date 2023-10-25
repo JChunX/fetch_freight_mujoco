@@ -6,11 +6,10 @@
     <option integrator="RK4" timestep="0.01"/>
     <default>
         <joint armature="0" damping="0" limited="false"/>
-        <!-- <geom friction="1 0.5 0.5" rgba="0.8 0.6 0.4 1"/> -->
-        <geom conaffinity="0" condim="3" friction="1 0.5 0.5" rgba="0.8 0.6 0.4 1"/>
+
+        <geom conaffinity="0" condim="3" friction="1 0.5 0.5" rgba="0.2 0.2 0.2 1"/>
     </default>
     
-    <!-- <option integrator="RK4" timestep="0.01"/> -->
     <asset>
         <texture builtin="checker" height="100" name="texplane" rgb1="0 0 0" rgb2="0.8 0.8 0.8" type="2d" width="100"/>
         <mesh name="base_link" file="base_link.STL"/>
