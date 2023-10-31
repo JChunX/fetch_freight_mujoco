@@ -6,9 +6,17 @@
     <option integrator="implicitfast"/>
 
     <default>
-        <default class="freight_panda">
+        <default class="freight">
             <joint armature="0" damping="0" limited="false"/>
-            <geom conaffinity="0" condim="3" friction="1 0.5 0.5" rgba="0.2 0.2 0.2 1"/>
+
+            <default class="freight_visual">
+                <geom conaffinity="0" contype="0" group="2" density="0"/>
+            </default>
+
+            <default class="freight_collision">
+                <geom conaffinity="0" condim="3" group="3" friction="1 0.5 0.5"/>
+            </default>
+            
         </default>
 
         <default class="panda">
@@ -46,16 +54,16 @@
     
     <asset>
         <texture builtin="checker" height="100" name="texplane" rgb1="0.6 0.6 0.6" rgb2="0.8 0.8 0.8" type="2d" width="100"/>
-        <mesh name="base_link" file="base_link.STL"/>
-        <mesh name="base_link_collision" file="base_link_collision.STL"/>
-        <mesh name="r_wheel_link" file="r_wheel_link.STL"/>
-        <mesh name="r_wheel_link_collision" file="r_wheel_link_collision.STL"/>
-        <mesh name="l_wheel_link" file="l_wheel_link.STL"/>
-        <mesh name="l_wheel_link_collision" file="l_wheel_link_collision.STL"/>
-        <mesh name="estop_link" file="estop_link.STL"/>
-        <mesh name="estop_link_collision" file="estop_link_collision.STL"/>
-        <mesh name="laser_link" file="laser_link.STL"/>
-        <mesh name="laser_link_collision" file="laser_link_collision.STL"/>
+        <mesh name="base_link" file="base_link.STL" scale="1.2 1.2 1.2"/>
+        <mesh name="base_link_collision" file="base_link_collision.STL" scale="1.2 1.2 1.2"/>
+        <mesh name="r_wheel_link" file="r_wheel_link.STL" scale="1.2 1.2 1.2"/>
+        <mesh name="r_wheel_link_collision" file="r_wheel_link_collision.STL" scale="1.2 1.2 1.2"/>
+        <mesh name="l_wheel_link" file="l_wheel_link.STL" scale="1.2 1.2 1.2"/>
+        <mesh name="l_wheel_link_collision" file="l_wheel_link_collision.STL" scale="1.2 1.2 1.2"/>
+        <mesh name="estop_link" file="estop_link.STL" scale="1.2 1.2 1.2"/>
+        <mesh name="estop_link_collision" file="estop_link_collision.STL" scale="1.2 1.2 1.2"/>
+        <mesh name="laser_link" file="laser_link.STL" scale="1.2 1.2 1.2"/>
+        <mesh name="laser_link_collision" file="laser_link_collision.STL" scale="1.2 1.2 1.2"/>
         <material name="MatPlane" reflectance="0.5" shininess="1" specular="1" texrepeat="60 60" texture="texplane" />
     </asset>
 
