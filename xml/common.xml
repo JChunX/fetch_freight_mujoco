@@ -148,8 +148,8 @@
 
 
     <actuator>
-        <motor joint="r_wheel_joint" ctrlrange="-1 1" ctrllimited="true"/>
-        <motor joint="l_wheel_joint" ctrlrange="-1 1" ctrllimited="true"/>
+        <motor joint="r_wheel_joint" ctrlrange="-2 2" ctrllimited="true"/>
+        <motor joint="l_wheel_joint" ctrlrange="-2 2" ctrllimited="true"/>
     </actuator>
 
 
