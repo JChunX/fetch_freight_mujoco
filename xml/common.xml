@@ -148,8 +148,8 @@
 
 
     <actuator>
-        <motor joint="r_wheel_joint" ctrlrange="-2 2" ctrllimited="true"/>
-        <motor joint="l_wheel_joint" ctrlrange="-2 2" ctrllimited="true"/>
+        <motor joint="r_wheel_joint" ctrlrange="-3 3" ctrllimited="true"/>
+        <motor joint="l_wheel_joint" ctrlrange="-3 3" ctrllimited="true"/>
     </actuator>
 
 
@@ -166,7 +166,9 @@
 
     <actuator>
         <general class="panda" name="actuator1" joint="joint1" gainprm="4500" biasprm="0 -4500 -450"/>
-        <general class="panda" name="actuator2" joint="joint2" gainprm="4500" biasprm="0 -4500 -450"
+
+        <!-- "0 -4500 -450" -->
+        <general class="panda" name="actuator2" joint="joint2" gainprm="4500" biasprm="0 -8500 -450"
             ctrlrange="-1.7628 1.7628"/>
         <general class="panda" name="actuator3" joint="joint3" gainprm="3500" biasprm="0 -3500 -350"/>
         <general class="panda" name="actuator4" joint="joint4" gainprm="3500" biasprm="0 -3500 -350"

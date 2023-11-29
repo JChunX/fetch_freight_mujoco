@@ -2,6 +2,10 @@
 
     <include file="common.xml"/>
 
+    <visual>
+        <global offwidth="720" offheight="720"/>
+    </visual>
+
     <worldbody>
         <light cutoff="100" diffuse="1 1 1" dir="-0 0 -1.3" directional="true" exponent="1" pos="0 0 1.3" specular=".1 .1 .1"/>
         <geom friction="1.0 .1 .1" material="MatPlane" name="floor" pos="0 0 0"  size="20 20 0.125" type="plane" condim="3" conaffinity="1"/>

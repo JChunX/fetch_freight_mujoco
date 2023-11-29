@@ -91,6 +91,7 @@
                                 <geom mesh="link7_c" class="collision"/>
                                 <body name="hand" pos="0 0 0.107" quat="0.9238795 0 0 -0.3826834">
                                     <inertial mass="0.73" pos="-0.01 0 0.03" diaginertia="0.001 0.0025 0.0017"/>
+                                    <site name="end_effector" pos="0 0 0" size="0.01"/>
                                     <geom mesh="hand_0" material="off_white" class="visual"/>
                                     <geom mesh="hand_1" material="black" class="visual"/>
                                     <geom mesh="hand_2" material="black" class="visual"/>
